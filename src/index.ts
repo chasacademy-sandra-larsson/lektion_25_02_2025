@@ -19,6 +19,8 @@ app.get("/whatever", (request: Request, response: Response) => {
 
 // Som att skicka data med ett formulär!
 app.post("/whatever", (req: Request, res: Response) => {
+
+
     const {firstname, lastname} = req.body;
     res.json({ message: `Hello from /whatever with a POST-request and ${firstname} ${lastname}`})
 });
